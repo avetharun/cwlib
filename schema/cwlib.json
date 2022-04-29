@@ -1,27 +1,12 @@
 {
+  "title": "JSON schema for CWlib world files",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "CWlib",
-  "oneOf": [
-   {
-      "title": "Asset",
-      "type": "object",
-      "required": [
-        "id",
-        "schema",
-        "asset_data"
-      ],
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "schema": {
-          "type": "string"
-        }
-        "asset_data":{
-          "type":"object"
-        }
-        
-      }
-    },
-  ]
+
+  "type": "object",
+
+  "properties": {
+    "Data": {
+      "type": "object"
+    }
+  }
 }
