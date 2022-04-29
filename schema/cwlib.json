@@ -1,12 +1,57 @@
 {
-  "title": "JSON schema for CWlib world files",
-  "$schema": "http://json-schema.org/draft-04/schema#",
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://lazyne.co/cwlib/schema.json", 
+	"title": "CWlib schema for bare JSON objects", 
+	"type": "object",
+	"required": [
+		"layout"
+	],
+	"properties": {
+		"layout": {
+			"$id": "#root/layout", 
+			"title": "Layout", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/layout/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"id",
+					"schema",
+					"asset_data"
+				],
+				"properties": {
+					"id": {
+						"$id": "#root/layout/items/id", 
+						"title": "Id", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"schema": {
+						"$id": "#root/layout/items/schema", 
+						"title": "Schema", 
+						"type": "array",
+						"default": []
+					},
+					"asset_data": {
+						"$id": "#root/layout/items/asset_data", 
+						"title": "Asset_data", 
+						"type": "object",
+						"required": [
+						],
+						"properties": {
+						}
+					}
 
-  "type": "object",
+				}
+			}
 
-  "properties": {
-    "Data": {
-      "type": "object"
-    }
-  }
+		}
+	}
 }
