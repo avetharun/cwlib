@@ -44,8 +44,61 @@
 						"title": "Asset_data", 
 						"type": "object",
 						"required": [
+							"transform"
 						],
 						"properties": {
+							"transform": {
+								"$id": "#root/layout/items/asset_data/transform", 
+								"title": "Transform", 
+								"type": "object",
+								"required": [
+									"x",
+									"y",
+									"w",
+									"h"
+								],
+								"properties": {
+									"x": {
+										"$id": "#root/layout/items/asset_data/transform/x", 
+										"title": "X", 
+										"type": "integer",
+										"examples": [
+											0
+										],
+										"default": 0
+									},
+									"y": {
+										"$id": "#root/layout/items/asset_data/transform/y", 
+										"title": "Y", 
+										"type": "integer",
+										"examples": [
+											0
+										],
+										"default": 0
+									},
+									"w": {
+										"$id": "#root/layout/items/asset_data/transform/w", 
+										"title": "W", 
+										"type": "string",
+										"default": "",
+										"examples": [
+											"100%"
+										],
+										"pattern": "^.*$"
+									},
+									"h": {
+										"$id": "#root/layout/items/asset_data/transform/h", 
+										"title": "H", 
+										"type": "string",
+										"default": "",
+										"examples": [
+											"100%"
+										],
+										"pattern": "^.*$"
+									}
+								}
+							}
+
 						}
 					}
 
