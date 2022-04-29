@@ -1,7 +1,7 @@
 {
 	"definitions": {},
 	"$schema": "http://json-schema.org/draft-07/schema#", 
-	"$id": "https://lazyne.co/cwlib/schema.json", 
+	"$id": "https://raw.githubusercontent.com/avetharun/cwlib/main/schema/cwlib.json", 
 	"title": "CWlib schema for bare JSON objects", 
 	"type": "object",
 	"required": [
